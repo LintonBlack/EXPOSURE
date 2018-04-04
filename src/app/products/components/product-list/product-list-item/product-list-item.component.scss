@@ -1,0 +1,17 @@
+$product-item__border__colour : #DF8700;
+$product-item__box-shadow__colour : #e2e6e8;
+$product-item__bg__colour : #fff;
+.product-item {
+    &__inner {
+        box-shadow: 0 1px 10px $product-item__box-shadow__colour;
+        border-left: 3px solid $product-item__border__colour;
+        background: $product-item__bg__colour;
+        flex:1 1 auto;
+        margin:10px;
+        img {
+          object-fit: cover;
+          max-width: 220px;
+          width: 100%;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<div class="row-base" style="display: -webkit-flex">
+  <section>
+    <ul class="results-base flex-container wrap">
+      <li *ngFor="let product of products"
+          class="product-item__container flex-item">
+          <app-product-list-item
+            [product]="product"
+            (handleRemoveProduct)="onClickRemove($event)">
+          </app-product-list-item>
+      </li>
+    </ul>
+  </section>
+</div>
